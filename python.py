@@ -1,4 +1,7 @@
-def greet(name):
-    return f"Hello, {name}! Welcome to the project."
+from datetime import datetime
 
-print(greet("Mohsin"))
+def show_time():
+    now = datetime.now()
+    return now.strftime("%Y-%m-%d %H:%M:%S")
+
+print("Current time is:", show_time())
